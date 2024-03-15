@@ -1,0 +1,49 @@
+@import url("reset.css");
+
+h1 {
+	color: red;
+}
+
+.sub-title {
+	color: orange;
+}
+
+.header,
+.link,
+h3 {
+	color: blue;
+}
+
+div.text1 {
+	color: brown;
+}
+
+.text2 span {
+	color: green;
+}
+
+.text4.text3 {
+	color: aqua;
+}
+
+.text1_box .list {
+	color: yellow;
+}
+
+.sub-text * {
+	color: burlywood
+}
+
+.text1>p {
+	color: beige;
+}
+
+
+
+.sub-text2~p {
+	color: greenyellow;
+}
+
+.sub-sub-title+p {
+	color: greenyellow
+}
