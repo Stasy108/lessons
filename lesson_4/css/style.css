@@ -1,0 +1,114 @@
+@import url("fonts.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Geologica:200,regular,700&display=swap");
+
+@import url("reset.css");
+
+
+h1 {
+	color: red;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-decoration-color: blue;
+	text-decoration-style: wavy;
+	font-size: 30px;
+	text-align: center;
+	font-family: "Comfortaa", sans-serif;
+	text-shadow: 5px 5px 10px purple;
+}
+
+.article h2 {
+	color: yellowgreen;
+	font-size: 24px;
+	font-family: "Kablammo", system-ui;
+	letter-spacing: 5px;
+}
+
+h3 {
+	font-size: 20px;
+	color: green;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: "Play", sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+
+}
+
+.link {
+	color: blue;
+	text-transform: lowercase;
+	font-family: "Play", sans-serif;
+	word-spacing: 15px;
+	text-shadow: 5px 5px 10px blueviolet, -5px -5px 10px black;
+}
+
+.str1 {
+	font-size: 20px;
+	font-family: "Geologica", serif;
+	font-weight: 200;
+	font-style: oblique;
+	color: red;
+}
+
+.str2 {
+	font-size: 20px;
+	color: aqua;
+	text-decoration: line-through dotted red;
+}
+
+.p1 {
+	font-family: "Geologica", serif;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: justify;
+
+}
+
+.p2 {
+	font-family: "Geologica", serif;
+	font-weight: 700;
+	text-align: right;
+	line-height: 1.11111111;
+	/* 20/18 */
+}
+
+.screen1 {
+	color: #2b2929;
+	font-size: 16px;
+	line-height: 30px;
+	font-family: "Proxima Nova Rg", sans-serif;
+}
+
+.screen1 .title {
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	font-weight: 600;
+	font-family: "Proxima Nova Lt", sans-serif;
+}
+
+.screen2 {
+	color: #2b2929;
+	font-family: "Proxima Nova Rg", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.screen2 .title {
+	font-size: 40px;
+	font-family: "Proxima Nova Lt", sans-serif;
+	line-height: 48px;
+	font-weight: 600;
+}
+
+.screen2 .list p {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 600;
+	font-family: "Proxima Nova Lt", sans-serif;
+}
