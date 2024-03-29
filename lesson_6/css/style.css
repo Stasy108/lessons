@@ -1,0 +1,361 @@
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap");
+
+
+@import url("reset.css");
+
+
+.header {
+	width: 1070px;
+	margin: 0 auto;
+	font-family: "Bebas Neue";
+	font-size: 20px;
+	text-align: center;
+}
+
+.header a {
+	display: inline-block;
+	background-color: aquamarine;
+	width: 200px;
+	margin: 10px 20px;
+}
+
+h1 {
+	font-size: 24px;
+	font-family: "Roboto", sans-serif;
+	color: red;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 10px 0 20px 0;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 500;
+	color: green;
+	text-decoration: underline;
+	margin: 0 0 30px 20px;
+	text-transform: capitalize;
+	font-family: "Bebas Neue";
+}
+
+.dz_content {
+	width: 95%;
+	margin: 0 auto 50px;
+	padding: 10px;
+	border: 3px dotted red;
+	border-radius: 15px;
+}
+
+.borders {
+	font-size: 20px;
+	width: 100%;
+	padding: 20px;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 200px;
+	display: inline-block;
+}
+
+.borders .item1 {
+	border: 3px solid red;
+	box-shadow: 5px 5px 10px rgba(109, 35, 35, 0.922);
+	border-radius: 10px 0 10px 0;
+}
+
+.borders .item2 {
+	border: 3px dotted red;
+	box-shadow: inset 5px 5px 10px rgba(109, 35, 35, 0.922);
+}
+
+.borders .item3 {
+	border: 3px dashed red;
+	box-shadow: 5px 5px 10px rgba(109, 35, 35, 0.922), inset 5px 5px 10px rgba(109, 35, 35, 0.922);
+	border-radius: 0 25px 0 0;
+}
+
+.borders .item4 {
+	border: 3px double red;
+	border-radius: 20px;
+	outline-offset: 3px;
+	outline: 5px dotted rgba(0, 0, 255, 0.305);
+}
+
+.borders .item5 {
+	border-top: 3px dotted red;
+	border-left: 3px dashed blue;
+	border-bottom: 3px double green;
+	border-right: none;
+}
+
+.borders .item6 span {
+	outline: 10px solid rgba(0, 128, 0, 0.434);
+}
+
+.borders .example1_img {
+	border-radius: 50%;
+	border: 2px solid yellowgreen;
+	outline-offset: 2px;
+	outline: 3px solid yellow;
+	margin-right: 20px;
+}
+
+.borders .example2_img {
+	opacity: 0.5;
+	border-radius: 0 15% 0 15%;
+	outline: 2px solid yellowgreen;
+}
+
+.bg_item1,
+.bg_item2,
+.bg_item3 {
+	width: 400px;
+	display: inline-block;
+	margin: 0 20px 20px 0;
+}
+
+.bg_item1 {
+	background-color: rgb(230, 196, 152);
+	padding-left: 30px;
+	background-image: url('../img/v6-icon.png');
+	background-repeat: repeat-y;
+
+}
+
+.bg_item2 {
+	background-image: url('../img/almaty.jpeg');
+	background-size: contain;
+}
+
+.bg_item3 {
+	background-image: url('../img/almaty.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.bg_item4,
+.bg_item5 {
+	width: 200px;
+	display: inline-block;
+	margin: 0 20px 20px 0;
+}
+
+.bg_item4 {
+	padding: 10px;
+	background: radial-gradient(ellipse at center, rgba(203, 96, 179, 1) 34%, rgba(173, 18, 131, 1) 65%, rgba(222, 71, 172, 1) 100%);
+	background-position: center;
+}
+
+.bg_item5 {
+	padding: 10px;
+	background: rgba(31, 194, 31, 0.51) url('../img/v6-icon.png') right bottom/auto no-repeat;
+}
+
+.bg_item6 {
+	display: inline-block;
+	margin-right: 20px;
+	width: 300px;
+	border-radius: 50%;
+	border: 3px solid green;
+	overflow: hidden;
+	background: rgba(0, 128, 0, 0.278) url('../img/almaty.jpeg') center no-repeat;
+	opacity: 0.7;
+}
+
+.bg_item7 {
+	display: inline-block;
+	width: 300px;
+	background-image: url('../img/almaty.jpeg');
+	background-attachment: fixed;
+}
+
+
+
+.screen1 {
+	background-color: #f8f8f8;
+}
+
+.screen1_content {
+	color: #2b2929;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	width: 1070px;
+	margin: 0 auto 50px;
+}
+
+.screen1 .title {
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+.screen1 img {
+	margin-bottom: 40px;
+}
+
+.screen1 .text1 {
+	overflow: auto;
+	margin-bottom: 24px;
+}
+
+.screen1 .text1 p {
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 15px;
+}
+
+.list p {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 28px;
+	margin-bottom: 26px;
+}
+
+.list li {
+	background: url('../img/mark.png') 0 0 no-repeat;
+	padding: 0 0 20px 47px;
+	min-height: 32px;
+}
+
+.list {
+	margin-bottom: 20px;
+}
+
+.text2 p {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+
+
+
+.screen2 {
+	color: #fff;
+	font-size: 0;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	line-height: 32px;
+	background: #914cff url('../img/holographic.png') center no-repeat;
+	background-image: url('../img/liters.png');
+}
+
+.screen2_content {
+	margin: 0 auto 50px;
+}
+
+.container {
+	display: inline-block;
+}
+
+.container_title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 48px;
+	margin-bottom: 24px;
+}
+
+.container_text {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 32px;
+	margin-bottom: 24px;
+}
+
+.container_button {
+	padding: 12px 20px;
+	display: inline-block;
+	border-radius: 8px 8px 8px 8px;
+}
+
+.container {
+	width: 600px;
+	margin: 121px 133px 0 80px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.screen2_content .image {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+.screen3 {
+	width: 1920px;
+	background: var(--black-5);
+	background-image: url('../img/flower-pattern.png');
+	background-repeat: no-repeat;
+	background-position: 0 366px;
+	border: 1px solid black;
+}
+
+.screen3_content {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #000;
+	margin-left: 300px;
+	margin-top: 225px;
+	font-size: 0;
+	margin-bottom: 50px;
+}
+
+.screen3_content .content_text {
+	margin-bottom: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.content_text .title {
+	font-size: 74px;
+	font-weight: 300;
+	line-height: 55px;
+	margin-bottom: 52px;
+}
+
+.content_text .content_text1 {
+	width: 100%;
+	font-size: 30px;
+	line-height: 55px;
+	margin-bottom: 66px;
+	margin-right: 98px;
+	text-transform: capitalize;
+}
+
+.button span {
+	text-transform: capitalize;
+	padding: 19px 26px 19px 64px;
+	color: #fff;
+	font-size: 29px;
+	background-color: #1e2832;
+	background-image: url('../img/v6-icon.png');
+	background-repeat: no-repeat;
+	background-position: 26px;
+	display: inline-block;
+}
+
+.content_foto {
+	display: inline-block;
+	vertical-align: middle;
+	border: 2px solid black;
+	border-radius: 160px 0 160px 0;
+}
+
+.content_foto img {
+	margin: -20px 18px 20px -18px;
+	border-radius: 160px 0 160px 0;
+}
