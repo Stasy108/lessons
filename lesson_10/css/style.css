@@ -1,0 +1,398 @@
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+
+@import url("reset.css");
+
+
+
+
+body {
+	background: rgba(148, 188, 233, 0.726);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+.header {
+	padding: 30px 0;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	color: blueviolet;
+}
+
+.title span {
+	text-decoration: underline;
+	color: aliceblue;
+}
+
+.content>*:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.subtitle {
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: aliceblue;
+	min-height: 40px;
+	padding-left: 50px;
+
+}
+
+.subtitle span {
+	text-decoration: underline;
+}
+
+.subtitle-box {
+	position: relative;
+}
+
+.subtitle::before {
+	background: url('../img/mark.svg') 0 0 no-repeat;
+	content: "";
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 15px;
+	top: 2px;
+}
+
+
+.image__fon {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+
+.block {
+	text-transform: uppercase;
+	font-size: 28px;
+	max-width: 500px;
+	height: 360px;
+	overflow: clip;
+	margin-left: 20px;
+	position: relative;
+}
+
+.block__item {
+	text-align: center;
+	padding: 15px;
+	border: 1px dotted red;
+	border-radius: 8px;
+}
+
+.block__item:nth-child(1) {
+	background-color: red;
+}
+
+.block__item:nth-child(2) {
+	background-color: orange;
+	position: relative;
+	top: 10px;
+	left: 20px;
+}
+
+.block__item:nth-child(3) {
+	background-color: yellow;
+	position: relative;
+	z-index: 2;
+}
+
+.block__item:nth-child(4) {
+	background-color: green;
+	position: relative;
+	bottom: 5%;
+	right: 15%;
+}
+
+.block__item:nth-child(5) {
+	background-color: rgba(0, 0, 255, 0.422);
+}
+
+.block__item:nth-child(6) {
+	background-color: blue;
+	border-radius: 50%;
+	position: absolute;
+	right: 120px;
+	bottom: 30px;
+}
+
+.block__item:nth-child(7) {
+	background-color: violet;
+}
+
+.block--scroll {
+	font-size: 20px;
+	overflow: auto;
+	max-width: 500px;
+	height: 360px;
+	margin-left: 20px;
+}
+
+.block--scroll__item:nth-child(odd) {
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding: 15px;
+	border-radius: 8px;
+	position: sticky;
+	top: 0px;
+}
+
+.block--scroll__item:first-child {
+	background-color: red;
+}
+
+.block--scroll__item:nth-child(3) {
+	background-color: green;
+}
+
+.block--scroll__item:nth-child(5) {
+	background-color: yellow;
+}
+
+.menu-example {
+	padding: 20px;
+	background-color: aquamarine;
+	width: 100%;
+	height: 200px;
+}
+
+.mainlist {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.mainlist__list {
+	font-size: 0;
+}
+
+.mainlist__item {
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.mainlist__link {
+	background-color: rgba(238, 174, 202, 1);
+	padding: 10px 20px;
+}
+
+.mainlist__item:hover .mainlist__link {
+	background-color: rgba(148, 187, 233, 1);
+}
+
+.mainlist__link:hover {
+	text-decoration: underline;
+}
+
+.mainlist__item:hover .secondlist {
+	display: block;
+}
+
+.secondlist {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: rgba(148, 187, 233, 1);
+	width: 100%;
+	min-width: 90%;
+	padding: 10px;
+	line-height: 1.8;
+	display: none;
+}
+
+.secondlist__link:hover {
+	text-decoration: underline;
+}
+
+
+
+.card {
+	background-color: #f8f8f8;
+	padding: 50px;
+}
+
+.card-content {
+	position: relative;
+	box-shadow: -3px 4px 15px 0 rgba(0, 0, 0, .06);
+	border-radius: 8px 8px 8px 8px;
+	background-color: white;
+	max-width: 250px;
+	max-height: 300px;
+	font-family: Proxima Nova, sans-serif;
+	color: #2b2929;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.4;
+	/* 28/20 */
+	overflow: hidden;
+}
+
+.card-content__title {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+.card-content__number {
+	color: #b1b1b1;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.card-content__link {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.card-content__background {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.card-content__main-img {
+	position: relative;
+}
+
+
+
+
+
+.menu {
+	padding: 30px;
+	font-family: Proxima Nova, sans-serif;
+	color: #2b2929;
+	font-size: 20px;
+	line-height: 1.4;
+	/* 28/20 */
+	font-weight: 600;
+}
+
+.button__link {
+	padding: 11px 20px 11px 54px;
+	color: #fff;
+	font-size: 19px;
+	line-height: 1.26;
+	/* 24/19 */
+	background-color: #ffbc57;
+	max-width: 145px;
+	border-radius: 8px 8px 8px 8px;
+}
+
+.button {
+	position: relative;
+	max-width: 145px;
+	margin-bottom: 25px;
+	left: 284px;
+}
+
+.button__link::before {
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 20px;
+	background: url(../img/icons/catalog.svg) 0 0 /100% no-repeat;
+	width: 24px;
+	height: 24px;
+}
+
+.catalog {
+	display: none;
+}
+
+.catalog:target {
+	display: block;
+}
+
+.catalog__list {
+	padding: 8px 0;
+	background-color: #f8f8f8;
+	border-radius: 8px 0 0 8px;
+	position: relative;
+	display: inline-block;
+}
+
+.catalog__link {
+	padding: 10px 15px 10px 30px;
+	line-height: 1.4;
+	/* 28/20 */
+	height: 60px;
+}
+
+.catalog__item img {
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+}
+
+.catalog__link span {
+	display: inline-block;
+	padding-top: 6px;
+	width: 166px;
+}
+
+.catalog__link::after {
+	content: "";
+	background: url('../img/icons/arrow.svg') 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+}
+
+.submenu {
+	padding: 8px 0;
+	background-color: #f8f8f8;
+	border-radius: 0 8px 8px 0;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 2.1;
+	/* 40/19 */
+	display: none;
+	position: absolute;
+	left: 300px;
+	top: 0;
+	height: 100%;
+}
+
+.catalog__item:hover {
+	background-color: #ffbc57;
+}
+
+.catalog__item:hover .submenu {
+	display: block;
+}
+
+.submenu__list {
+	background: url('../img/icons/line.png') 0 0 no-repeat;
+	padding: 12px 10px 0 27px;
+	min-width: 308px;
+}
+
+.submenu__link {}
+
+.submenu__link:hover {
+	text-decoration: underline;
+}
