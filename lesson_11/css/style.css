@@ -1,0 +1,495 @@
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+
+@import url("reset.css");
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+}
+
+.header__title {
+	padding: 30px 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 233, 211, 1) 100%);
+}
+
+.boxes {
+	padding: 30px;
+	background-color: rgba(238, 174, 202, 0.375);
+}
+
+.boxes>* {
+	margin-right: 30px;
+	margin-bottom: 60px;
+}
+
+h2 {
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: rgb(234, 126, 173);
+}
+
+.box,
+.box3d {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 20px;
+}
+
+.box__back,
+.box3d__back {
+	width: 200px;
+	height: 200px;
+	background-color: rgba(238, 174, 202, 0.538);
+}
+
+.box__front,
+.box3d__front {
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(148, 233, 210, 0.912);
+	border: 1px dotted black;
+}
+
+.box__front--down {
+	transform: translate(20%, 20%);
+}
+
+.box__front--up {
+	transform: translate(25px, -25px);
+}
+
+.box__back:hover .box__front--left {
+	transform: translate(-25px, 25px);
+}
+
+.box__front--small1 {
+	transform: scale(0.5);
+}
+
+.box__back:hover .box__front--small2 {
+	transform: scale(-1, 1);
+}
+
+.box__front--big {
+	transform: scale(1.5);
+}
+
+.box__front--rotate {
+	transform: rotate(60deg);
+}
+
+.box__back:hover .box__front--rotatey {
+	transform: rotateY(60deg);
+}
+
+.box__front--skew {
+	transform: skew(-20deg, 0);
+}
+
+.box__front--skew2 {
+	transform: skew(0, 20deg);
+}
+
+.box__front--matrix {
+	transform: translate(20px, 20px) scale(0.6) rotate(45deg);
+}
+
+.box__front--origin {
+	transform-origin: bottom;
+	transform: rotate(45deg);
+}
+
+.box3d__back {
+	perspective: 600px;
+	perspective-origin: center;
+}
+
+.box3d__front--t1 {
+	transform: translate3d(20px, 10px, 30px);
+}
+
+.box3d__front--t2 {
+	transform: scale3d(0.8, 0.6, 0.5);
+}
+
+.box3d__front--t3 {
+	transform: rotate3d(10, 20, 30, 30deg);
+}
+
+.box3d__back--style {
+	perspective: 800px;
+	perspective-origin: center;
+	transform-style: preserve-3d;
+}
+
+.box3d__front--t4 {
+	transform: rotatex(60deg);
+}
+
+.box3d__front--t5 {
+	transform: rotateY(60deg);
+}
+
+.box3d__back--backface:hover .box3d__front--t6 {
+	backface-visibility: hidden;
+	transform: rotateY(90deg);
+}
+
+
+
+.practice {
+	padding: 20px;
+}
+
+.content {
+	border: 2px dotted black;
+	border-radius: 15px;
+	background-color: rgba(0, 213, 255, 0.503);
+}
+
+.fon-image {
+	width: 100%;
+}
+
+.clouds {
+	padding: 100px 50px;
+}
+
+.clouds>* {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.clouds__cloud1 {
+	margin-right: 500px;
+}
+
+.cloud__1 {
+	width: 250px;
+	height: 50px;
+	background-color: aliceblue;
+	border-radius: 60px 50px 20px 10px;
+	box-shadow: 20px 10px 20px white;
+}
+
+.cloud__2 {
+	width: 100px;
+	height: 50px;
+	background-color: aliceblue;
+	border-radius: 60px 50px 20px 10px;
+	transform: translate(30px, -30px);
+}
+
+.cloud__3 {
+	width: 150px;
+	height: 100px;
+	background-color: aliceblue;
+	border-radius: 30px 70px 20px 10px;
+	transform: translate(60px, -30px);
+}
+
+.clouds__cloud2 {
+	transform: rotateY(180deg) skewX(20deg) scale(1.2);
+	margin-right: 50px;
+}
+
+.clouds__cloud3 {
+	transform: skewX(20deg) scale(0.7);
+}
+
+.car {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.car__body {
+	width: 500px;
+	height: 190px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.car__body__roof {
+	border: 1px solid black;
+	height: 15px;
+	width: 250px;
+	background-color: aliceblue;
+	border-radius: 30px 40px 0 0;
+	position: relative;
+	top: 0;
+	left: 80px;
+	transform: skewX(20deg);
+}
+
+.car__body__up>* {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.car__body__up__1 {
+	height: 60px;
+	width: 15px;
+	background-color: red;
+	border: 1px solid black;
+	position: relative;
+	top: 0;
+	left: 65px;
+	transform: skewX(-30deg);
+
+}
+
+.car__body__up__2 {
+	border: 2px solid black;
+	background-color: grey;
+	height: 60px;
+	width: 100px;
+	position: relative;
+	top: 0;
+	left: 62px;
+	transform: skewX(-30deg);
+	/*transform: rotateX(20deg);
+	transform: prese;
+	/*transform: skewX(-30deg 30deg);*/
+}
+
+.car__body__up__3 {
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: grey;
+	height: 60px;
+	width: 100px;
+	position: relative;
+	top: 0;
+	left: 58px;
+	transform: skewX(-30deg);
+}
+
+.car__body__up__33 {
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	background-color: grey;
+	height: 60px;
+	width: 70px;
+	position: relative;
+	top: 0;
+	left: 20px;
+	transform: skewX(30deg);
+}
+
+.car__body__up__4 {
+	height: 60px;
+	width: 15px;
+	background-color: red;
+	border: 1px solid black;
+	position: relative;
+	top: 0;
+	left: 15px;
+	transform: skewX(30deg);
+}
+
+.car__body__up__5 {
+	height: 60px;
+	width: 15px;
+	background-color: grey;
+	border: 1px solid black;
+	position: relative;
+	top: 0;
+	left: 12px;
+	transform: skewX(30deg);
+}
+
+.car__body__center>* {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.car__body__center__back {
+	border: 1px solid black;
+	width: 180px;
+	height: 90px;
+	background-color: red;
+	border-radius: 30px 0px 0px 0px;
+	position: relative;
+	top: 0;
+	left: 15px;
+	transform: skewX(-10deg);
+}
+
+.car__body__center__front {
+	border: 1px solid black;
+	border-left: 2px solid black;
+	width: 300px;
+	height: 90px;
+	background-color: red;
+	border-radius: 0px 80px 0px 0px;
+	position: relative;
+	top: 0;
+	left: -10px;
+	transform: skewX(10deg);
+
+}
+
+.car__body__bottom>* {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.car__body__bottom__1 {
+	height: 40px;
+	width: 40px;
+	border: 2px solid black;
+	border-radius: 10px 5px 0 8px;
+	background-color: aliceblue;
+	position: relative;
+	top: -30px;
+	left: 0;
+	transform: skewX(-20deg);
+}
+
+.car__body__bottom__2 {
+	height: 30px;
+	width: 245px;
+	border: 2px solid black;
+	border-radius: 5px 5px 8px 8px;
+	background-color: aliceblue;
+	position: relative;
+	top: -10px;
+	left: 70px;
+}
+
+.car__body__bottom__3 {
+	height: 40px;
+	width: 50px;
+	border: 2px solid black;
+	border-radius: 5px 10px 10px 0;
+	background-color: aliceblue;
+	position: relative;
+	top: -30px;
+	left: 150px;
+	transform: skewX(10deg);
+}
+
+.car__wheels>* {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.car__wheels>* {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50%;
+	border: 3px dotted white;
+	position: relative;
+	z-index: 5;
+	margin-top: -65px;
+}
+
+.car__wheels__wheel1 {
+	margin-left: 25px;
+}
+
+.car__wheel__disk {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: grey;
+	outline: 10px solid whitesmoke;
+	position: relative;
+	top: 23px;
+	left: 23px;
+}
+
+.car__wheels__wheel2 {
+	margin-left: 225px;
+}
+
+.car__body__light1 {
+	width: 25px;
+	height: 40px;
+	border-radius: 59% 41% 56% 44% / 83% 10% 90% 17%;
+	border: 2px solid black;
+	background-color: orange;
+	position: absolute;
+	top: 95px;
+	left: 10px;
+	z-index: 3;
+}
+
+.car__body:hover .car__body__light1 {
+	background-color: yellow;
+}
+
+.car__body__light2 {
+	width: 25px;
+	height: 40px;
+	border-radius: 20% 80% 43% 57% / 40% 72% 28% 60%;
+	border: 2px solid black;
+	background-color: white;
+	position: absolute;
+	top: 90px;
+	right: 35px;
+	z-index: 3;
+	transform: skewX(20deg);
+}
+
+.car__body:hover .car__body__light2 {
+	background-color: yellow;
+}
+
+.car__body__mirror {
+	width: 30px;
+	height: 30px;
+	border-radius: 9% 91% 18% 82% / 85% 70% 30% 15%;
+	border: 2px solid black;
+	background-color: aliceblue;
+	position: absolute;
+	top: 55px;
+	right: 145px;
+	z-index: 3;
+}
+
+.car__body__door {
+	width: 30px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: rgb(164, 5, 5);
+	position: absolute;
+	top: 90px;
+	right: 290px;
+	z-index: 3;
+}
+
+.road {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(128, 128, 128, 0.658);
+	margin-top: -10px;
+}
+
+.green {
+	width: 100%;
+	height: 30px;
+	background-color: rgba(0, 128, 0, 0.867);
+}
