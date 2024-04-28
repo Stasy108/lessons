@@ -1,0 +1,679 @@
+@import url("reset.css");
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+}
+
+.header__title {
+	padding: 30px 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 233, 211, 1) 100%);
+}
+
+
+.practice {
+	padding: 20px;
+	overflow: hidden;
+}
+
+.content {
+	border: 2px dotted black;
+	border-radius: 15px;
+	background-color: rgba(0, 213, 255, 0.503);
+	overflow: hidden;
+	animation-name: night;
+	animation-duration: 30s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes night {
+	100% {
+		background-color: rgb(69, 59, 59);
+	}
+}
+
+.sun {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: yellow;
+	transform: translate(1300px, 10px);
+	animation-name: sun;
+	animation-duration: 15s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes sun {
+	100% {
+		transform: translate(-100px, 450px);
+		background-color: red;
+		box-shadow: -10px 10px 10px red;
+	}
+}
+
+.moon {
+	position: relative;
+	top: 0;
+	right: 50px;
+	opacity: 0;
+	animation-name: moon;
+	animation-duration: 5s;
+	animation-delay: 12s;
+	animation-fill-mode: forwards;
+}
+
+.moon-white {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: aliceblue;
+	/*box-shadow: 5px 5px 5px aliceblue;*/
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.moon-black {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+@keyframes moon {
+	100% {
+		opacity: 1;
+	}
+}
+
+.ufo img {
+	width: 200px;
+	position: absolute;
+	top: 300px;
+	right: 1175px;
+	opacity: 0;
+	animation-name: moon, fly;
+	animation-duration: 8s, 4s;
+	animation-delay: 18s, 26s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fly {
+	50% {
+		right: 500px;
+	}
+
+	100% {
+		top: -100px;
+	}
+}
+
+.ufo__light {
+	display: inline-block;
+	position: absolute;
+	top: 405px;
+	right: 1225px;
+	width: 100px;
+	height: 2px;
+	opacity: 0;
+	animation-name: ufo-light;
+	animation-duration: 6s;
+	animation-delay: 21s;
+}
+
+@keyframes ufo-light {
+	0% {
+		height: 5px;
+		opacity: 1;
+		background-color: aliceblue;
+	}
+
+	50% {
+		opacity: 1;
+		height: 270px;
+		background-color: aliceblue;
+		box-shadow: 10px 10px 10px aliceblue, -10px 10px 10px aliceblue;
+	}
+
+	100% {
+		height: 0px;
+	}
+}
+
+.clouds {
+	padding: 80px 0px;
+	height: 250px;
+	position: relative;
+}
+
+.clouds__cloud1 {
+	position: absolute;
+	right: 1200px;
+	top: 20px;
+	animation-name: rock-moove;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.clouds-1 {
+	width: 250px;
+	height: 50px;
+	background-color: aliceblue;
+	border-radius: 60px 50px 20px 10px;
+	box-shadow: 20px 10px 20px white;
+}
+
+.clouds-2 {
+	width: 100px;
+	height: 50px;
+	background-color: aliceblue;
+	border-radius: 60px 50px 20px 10px;
+	transform: translate(30px, -30px);
+}
+
+.clouds-3 {
+	width: 150px;
+	height: 100px;
+	background-color: aliceblue;
+	border-radius: 30px 70px 20px 10px;
+	transform: translate(60px, -30px);
+}
+
+.clouds__cloud2 {
+	transform: rotateY(180deg) skewX(20deg) scale(1.2);
+	position: absolute;
+	top: 25px;
+	right: 500px;
+	animation-name: rock-moove;
+	animation-duration: 8s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.clouds__cloud3 {
+	transform: skewX(20deg) scale(0.7);
+	position: absolute;
+	top: 25px;
+	right: 150px;
+	animation-name: rock-moove;
+	animation-duration: 13s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+
+.car {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.car__body {
+	width: 500px;
+	height: 190px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.car__roof {
+	border: 1px solid black;
+	height: 15px;
+	width: 250px;
+	background-color: aliceblue;
+	border-radius: 30px 40px 0 0;
+	position: relative;
+	top: 0;
+	left: 80px;
+	transform: skewX(20deg);
+}
+
+.car__up>* {
+	display: inline-block;
+	vertical-align: top;
+	z-index: 3;
+}
+
+.car__up1 {
+	height: 60px;
+	width: 15px;
+	background-color: red;
+	border: 1px solid black;
+	position: relative;
+	top: 0;
+	left: 65px;
+	transform: skewX(-30deg);
+
+}
+
+.car__up2 {
+	border: 2px solid black;
+	background-color: grey;
+	height: 60px;
+	width: 100px;
+	position: relative;
+	top: 0;
+	left: 62px;
+	transform: skewX(-30deg);
+	/*transform: rotateX(20deg);
+	transform: prese;
+	/*transform: skewX(-30deg 30deg);*/
+}
+
+.car__up3 {
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: grey;
+	height: 60px;
+	width: 100px;
+	position: relative;
+	top: 0;
+	left: 58px;
+	transform: skewX(-30deg);
+}
+
+.car__up33 {
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	background-color: grey;
+	height: 60px;
+	width: 70px;
+	position: relative;
+	top: 0;
+	left: 20px;
+	transform: skewX(30deg);
+}
+
+.car__up4 {
+	height: 60px;
+	width: 15px;
+	background-color: red;
+	border: 1px solid black;
+	position: relative;
+	top: 0;
+	left: 15px;
+	transform: skewX(30deg);
+}
+
+.car__up5 {
+	height: 60px;
+	width: 15px;
+	background-color: grey;
+	border: 1px solid black;
+	position: relative;
+	top: 0;
+	left: 12px;
+	transform: skewX(30deg);
+}
+
+.car__center>* {
+	display: inline-block;
+	vertical-align: top;
+	z-index: 3;
+}
+
+.car__center--back {
+	border: 1px solid black;
+	width: 180px;
+	height: 90px;
+	background-color: red;
+	border-radius: 30px 0px 0px 0px;
+	position: relative;
+	top: 0;
+	left: 15px;
+	transform: skewX(-10deg);
+}
+
+.car__center--front {
+	border: 1px solid black;
+	border-left: 2px solid black;
+	width: 300px;
+	height: 90px;
+	background-color: red;
+	border-radius: 0px 80px 0px 0px;
+	position: relative;
+	top: 0;
+	left: -10px;
+	transform: skewX(10deg);
+
+}
+
+.car__bottom>* {
+	display: inline-block;
+	vertical-align: top;
+	z-index: 3;
+}
+
+.car__bottom1 {
+	height: 40px;
+	width: 40px;
+	border: 2px solid black;
+	border-radius: 10px 5px 0 8px;
+	background-color: aliceblue;
+	position: relative;
+	top: -30px;
+	left: 0;
+	transform: skewX(-20deg);
+}
+
+.car__bottom2 {
+	height: 30px;
+	width: 245px;
+	border: 2px solid black;
+	border-radius: 5px 5px 8px 8px;
+	background-color: aliceblue;
+	position: relative;
+	top: -10px;
+	left: 70px;
+}
+
+.car__bottom3 {
+	height: 40px;
+	width: 50px;
+	border: 2px solid black;
+	border-radius: 5px 10px 10px 0;
+	background-color: aliceblue;
+	position: relative;
+	top: -30px;
+	left: 150px;
+	transform: skewX(10deg);
+}
+
+.car__wheels>* {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50%;
+	border: 3px dotted white;
+	position: relative;
+	z-index: 5;
+	margin-top: -65px;
+	animation-name: rotate;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-delay: 0.5s;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.car__wheel1 {
+	margin-left: 25px;
+}
+
+.car__disk {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: grey;
+	outline: 10px solid whitesmoke;
+	position: relative;
+	top: 23px;
+	left: 23px;
+}
+
+.car__wheel2 {
+	margin-left: 225px;
+}
+
+.car__light1 {
+	width: 25px;
+	height: 40px;
+	border-radius: 59% 41% 56% 44% / 83% 10% 90% 17%;
+	border: 2px solid black;
+	background-color: orange;
+	position: absolute;
+	top: 95px;
+	left: 10px;
+	z-index: 5;
+	animation-name: light-stop;
+	animation-duration: 0.5s;
+	animation-delay: 15s;
+	animation-iteration-count: 3;
+}
+
+@keyframes light-stop {
+	100% {
+		background-color: red;
+		box-shadow: -10px -10px 10px red;
+	}
+}
+
+.car__light2 {
+	width: 25px;
+	height: 40px;
+	border-radius: 20% 80% 43% 57% / 40% 72% 28% 60%;
+	border: 2px solid black;
+	background-color: white;
+	position: absolute;
+	top: 90px;
+	right: 35px;
+	z-index: 5;
+	transform: skewX(20deg);
+	animation-name: light;
+	animation-duration: 10s;
+	animation-delay: 10s;
+}
+
+@keyframes light {
+	100% {
+		background-color: yellow;
+		box-shadow: 20px -20px 50px white;
+	}
+}
+
+.car__mirror {
+	width: 30px;
+	height: 30px;
+	border-radius: 9% 91% 18% 82% / 85% 70% 30% 15%;
+	border: 2px solid black;
+	background-color: aliceblue;
+	position: absolute;
+	top: 55px;
+	right: 145px;
+	z-index: 5;
+}
+
+.car__door {
+	width: 30px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: rgb(164, 5, 5);
+	position: absolute;
+	top: 90px;
+	right: 290px;
+	z-index: 5;
+}
+
+.camp {
+	display: inline-block;
+	position: absolute;
+	top: 500px;
+	right: 0;
+	animation-name: camp;
+	animation-delay: 15s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.camp__img {
+	height: 300px;
+}
+
+@keyframes camp {
+	100% {
+		top: -280px;
+	}
+}
+
+.tree {
+	display: inline-block;
+	position: absolute;
+	top: -200px;
+	right: 0;
+	animation-name: tree-moove;
+	animation-duration: 15s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	z-index: 2;
+}
+
+.tree__img {
+	height: 200px;
+}
+
+@keyframes tree-moove {
+	100% {
+		right: 90%;
+	}
+}
+
+.tree2 {
+	display: inline-block;
+	position: absolute;
+	top: -100px;
+	right: -200px;
+	animation-name: tree2-moove;
+	animation-duration: 13s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	z-index: 20;
+}
+
+.tree2__img {
+	height: 150px;
+}
+
+@keyframes tree2-moove {
+	100% {
+		right: 70%;
+	}
+}
+
+.label img {
+	width: 100px;
+	height: 100px;
+	transform: skewX(-30deg);
+	position: absolute;
+	top: -50px;
+	right: -300px;
+	animation-name: rock-moove;
+	animation-duration: 13s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	z-index: 20;
+}
+
+.road {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(128, 128, 128, 0.658);
+	margin-top: -10px;
+	position: relative;
+}
+
+.cow img {
+	width: 100px;
+	position: absolute;
+	position: absolute;
+	right: 1200px;
+	top: -55px;
+	opacity: 0;
+	animation-name: moon, disapear;
+	animation-duration: 5s, 3s;
+	animation-delay: 15s, 23s;
+	animation-fill-mode: forwards, forwards;
+}
+
+@keyframes disapear {
+	50% {
+		top: -200px
+	}
+
+	100% {
+		opacity: 0;
+		top: -220px
+	}
+}
+
+.rocks__rock1 {
+	width: 60px;
+	height: 40px;
+	border-radius: 30% 70% 70% 30% / 75% 70% 30% 25%;
+	background-color: rgb(71, 71, 71);
+	position: absolute;
+	right: 1200px;
+	top: 20px;
+	animation-name: rock-moove;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.rocks__rock2 {
+	width: 120px;
+	height: 30px;
+	border-radius: 67% 33% 69% 31% / 40% 70% 30% 60%;
+	background-color: rgb(77, 76, 76);
+	position: absolute;
+	top: 25px;
+	right: 600px;
+	animation-name: rock-moove;
+	animation-duration: 8s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.rocks__rock3 {
+	width: 80px;
+	height: 30px;
+	border-radius: 30% 70% 70% 30% / 75% 70% 30% 25%;
+	background-color: rgb(83, 82, 82);
+	position: absolute;
+	top: 25px;
+	right: 200px;
+	animation-name: rock-moove;
+	animation-duration: 12s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes rock-moove {
+	100% {
+		right: 110%;
+	}
+}
+
+.green {
+	width: 100%;
+	height: 30px;
+	background-color: rgba(0, 128, 0, 0.867);
+}
