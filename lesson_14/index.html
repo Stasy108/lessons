@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h1>lesson 14: forms</h1>
+			<div class="line"></div>
+		</header>
+
+		<main class="page">
+			<div class="ex-forms">
+				<form action="#" method="post" enctype="multipart/form-data" class="ex-forms__files">
+					<div class="ex-forms__file">
+						<input type="file" name="form[]" multiple tabindex="1">
+						<input type="file" name="form[]" multiple accept=" .jpg, .jepg" tabindex="2">
+					</div>
+				</form>
+				<form action="#" method="get" class="ex-forms__input input">
+					<div class="input__info">
+						<div class="input__name">
+							<label for="input-01">Input your name:</label>
+							<input type="text" id="input-01" class="input__form" name="form[]" tabindex="3" placeholder="Name"
+								autocomplete="additional-name">
+						</div>
+						<div class="input__pass">
+							<label for="input-02">Input your password:</label>
+							<input type="password" id="input-02" class="input__form" name="form[]" tabindex="4" minlength="7"
+								placeholder="password">
+						</div>
+						<div class="input__mail">
+							<label for="input-03">Input your email:</label>
+							<input type="email" id="input-03" class="input__form" name="form[]" tabindex="5"
+								placeholder="someone@gmail.com" required autocomplete="email">
+						</div>
+						<div class="input__tel">
+							<label for="input-04">Input your phone number:</label>
+							<input type="tel" id="input-04" class="input__form" name="form[]" tabindex="6"
+								placeholder="+7(707)123-45-67" required>
+						</div>
+						<div class="input__age">
+							<label for="input-05">Input date of your birth:</label>
+							<input type="date" id="input-05" class="input__form" name="form[]" tabindex="7" autocomplete="off">
+						</div>
+					</div>
+				</form>
+				<div class="ex-forms__search search">
+					<form action="#" class="search__form1">
+						<input type="search" class="search__field1" name="form[]" tabindex="8"
+							placeholder="Enter a search term">
+						<button class="search__button1" type="submit" tabindex="9"></button>
+					</form>
+					<form action="#" class="search__form2">
+						<input type="search" class="search__field2" name="form[]" tabindex="10"
+							placeholder="Enter a search term">
+						<button class="search__button2" tabindex="11"></button>
+					</form>
+				</div>
+				<form action="#" class="ex-forms__other other">
+					<div class="other__number">
+						<input type="number" id="input-06" class="other__formnum" name="form[]" tabindex="12"
+							placeholder="Input number">
+					</div>
+					<div class="other__color">
+						<label for="input-07">Select color:</label>
+						<input type="color" id="input-07" class="other__form" name="form[]" value="#FFC0CB" tabindex="13">
+					</div>
+					<div class="other__range">
+						<label for="input-08">Do you like music?</label>
+						<input type="range" id="input-08" class="other__rangefield" name="form[]" tabindex="14">
+					</div>
+					<div class="other__radio">
+						<span>Indicate your gender:</span>
+						<label for="input-09">female</label>
+						<input type="radio" id="input-09" name="gender" value="man" class="other__form-radio" tabindex="15">
+						<label for="input-10">male</label>
+						<input type="radio" id="input-10" name="gender" value="woman" class="other__form-radio" tabindex="16">
+					</div>
+					<div class="other__checkboxes">
+						<p>Select a car:</p>
+						<div class="other__checkbox">
+							<div class="other__check1">
+								<label for="input-11">BMW</label>
+								<input type="checkbox" id="input-11" checked name="car" value="bmw" class="other__form-check"
+									tabindex="17">
+							</div>
+							<div class="other__check1">
+								<label for="input-12">Mersedes</label>
+								<input type="checkbox" id="input-12" name="car" value="mersedes" class="other__form-check"
+									tabindex="18">
+							</div>
+							<div class="other__check1">
+								<label for="input-13">Audi</label>
+								<input type="checkbox" id="input-13" name="car" value="audi" class="other__form-check"
+									tabindex="19">
+							</div>
+						</div>
+						<div class="other__checkbox">
+							<label for="input-14" class="other__check2">
+								<input type="checkbox" id="input-14" name="car" value="bmw" class="other__form-check2"
+									tabindex="20">
+								<span class="other__labeltext">BMW</span>
+							</label>
+							<label for="input-15" class="other__check2">
+								<input type="checkbox" id="input-15" name="car" value="mersedes" class="other__form-check2"
+									tabindex="21">
+								<span class="other__labeltext">Mersedes</span>
+							</label>
+							<label for="input-16" class="other__check2">
+								<input type="checkbox" id="input-16" name="car" value="audi" class="other__form-check2"
+									tabindex="22">
+								<span class="other__labeltext">Audi</span>
+							</label>
+						</div>
+					</div>
+					<div class="other__text">
+						<label for="input-17">Please leave a review:</label>
+						<textarea name="text" id="input-17" class="other__textform" placeholder="some text" minlength="50"
+							maxlength="1000" tabindex="23"></textarea>
+					</div>
+					<div class="other__select01">
+						<label for="input-18">language:</label>
+						<select name="langlist" id="input-18" tabindex="24">
+							<option value="01">қазақ</option>
+							<option value="02">english</option>
+							<option value="03">español</option>
+							<option value="04">deutsch</option>
+							<option value="05">français</option>
+						</select>
+					</div>
+					<div class="other__select02">
+						<label for="input-19">language:</label>
+						<select name="langlist" id="input-19" multiple tabindex="25">
+							<option value="01">қазақ</option>
+							<option value="02">english</option>
+							<option value="03">español</option>
+							<option value="04">deutsch</option>
+							<option value="05">français</option>
+						</select>
+					</div>
+					<div class="buttons">
+						<button type="button" tabindex="26">button</button>
+						<button type="reset" tabindex="27">reset</button>
+						<button type="submit" tabindex="28">submit</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="krovato-container">
+				<div class="content">
+					<h2>Оформлення замовлення</h2>
+					<div class="forms">
+						<form action="#">
+							<div class="forms__info forms__info--border">
+								<h3 class="forms__title forms__title--info forms__title--margin">Інформація про покупця</h3>
+								<div class="forms__box box">
+									<div class="box__info">
+										<input type="text" class="box__input" placeholder="Прізвище" tabindex="29">
+										<input type="text" class="box__input" placeholder="Ім’я" tabindex="30">
+										<input type="text" class="box__input" placeholder="По батькові" tabindex="31">
+									</div>
+									<div class="box__info">
+										<input type="tel" class="box__input" placeholder="Контактний телефон" tabindex="32">
+										<input type="email" class="box__input" placeholder="E-mail" tabindex="33">
+									</div>
+								</div>
+								<div class="forms__check">
+									<input type="checkbox" id="check01" class="forms__check-input" tabindex="34">
+									<label for="check01" class="forms__labeltext">Отримуватиме замовлення інша людина</label>
+								</div>
+							</div>
+							<div class="forms__delivery forms__delivery--border">
+								<h3 class="forms__title forms__title--delivery forms__title--margin">Вибір способу доставки</h3>
+								<div class="forms__deliverytypes delivery delivery--margin">
+									<a href="#" class="delivery__link " tabindex="">
+										<ul class="delivery__terms">
+											<li>Самовивіз із магазину</li>
+											<li>Бесплатно</li>
+										</ul>
+									</a>
+									<a href="#" class="delivery__link" tabindex="">
+										<ul class="delivery__terms delivery__terms--np">
+											<li>Доставка Нова Пошта</li>
+											<li>≈ від 500 грн</li>
+										</ul>
+									</a>
+									<a href="#" class="delivery__link" tabindex="">
+										<ul class="delivery__terms delivery__terms--courier">
+											<li>Доставка кур&apos;єром</li>
+											<li>≈ від 200 грн</li>
+										</ul>
+									</a>
+								</div>
+								<div class="forms__adress adress">
+									<div class="adress__text">
+										<p>Графік роботи: щодня з 9:00 до 18:00</p>
+										<p>м. Київ, пров. Ізяславський 52, пов. 2</p>
+									</div>
+									<a href="#" class="adress__link">На мапі</a>
+								</div>
+							</div>
+							<div class="forms__pay forms__pay--border">
+								<h3 class="forms__title forms__title--pay forms__title--margin">Вибір способу оплати</h3>
+								<ul class="forms__paylist paylist">
+									<li>
+										<label class="paylist__item">
+											<input type="radio" class="paylist__input" name="paylist[]" value="" id="" tabindex="">
+											<span class="paylist__text">Готівкою при отриманні (Післясплата)</span>
+										</label>
+									</li>
+									<li>
+										<label class="paylist__item">
+											<input type="radio" class="paylist__input" name="paylist[]" value="" id="" tabindex="">
+											<span class="paylist__text">Оплата карткою на сайті</span>
+											<img src="img/icons/master-card-logo.svg" alt="master-card" class="paylist__img">
+											<img src="img/icons/visa-card-logo.svg" alt="visa-card" class="paylist__img">
+										</label>
+									</li>
+									<li>
+										<label class="paylist__item">
+											<input type="radio" class="paylist__input" name="paylist[]" value="" id="" tabindex="">
+											<span class="paylist__text">Privat Pay</span>
+											<img src="img/icons/privat-pay-logo.svg" alt="privatpay" class="paylist__img">
+										</label>
+									</li>
+									<li>
+										<label class="paylist__item">
+											<input type="radio" class="paylist__input" name="paylist[]" value="" id="" tabindex="">
+											<span class="paylist__text">Кредит від Krovato</span>
+										</label>
+									</li>
+									<li>
+										<label class="paylist__item">
+											<input type="radio" class="paylist__input" name="paylist[]" value="" id="" tabindex="">
+											<span class="paylist__text">Оплата частинами ПриватБанк</span>
+											<img src="img/icons/privat-logo.svg" alt="privatbank" class="paylist__img">
+										</label>
+									</li>
+									<li>
+										<label class="paylist__item">
+											<input type="radio" class="paylist__input" name="paylist[]" value="" id="" tabindex="">
+											<span class="paylist__text">Оплата частинами МоноБанк</span>
+											<img src="img/icons/mono-logo.svg" alt="monobank" class="paylist__img">
+										</label>
+									</li>
+								</ul>
+							</div>
+							<div class="forms__comments forms__comments--border">
+								<h3 class="forms__title forms__title--com forms__title--margin">Коментар до замовлення</h3>
+								<textarea name="form[]" class="forms__textfield" tabindex=""
+									placeholder="Ваш коментар"></textarea>
+							</div>
+							<div class="forms__button button">
+								<button type="submit" class="button__submit" tabindex="">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">footer</footer>
+	</div>
+</body>
+
+</html>
